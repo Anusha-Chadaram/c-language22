@@ -1,0 +1,23 @@
+//evensum or odd sum
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i=1,evensum=0,oddsum=0,difference=0;
+	printf("enter the num");
+	scanf("%d",&n);
+	while(i<=n)
+	{
+		if(i%2==0)
+		evensum=evensum+i;
+		else
+		oddsum=oddsum+i;
+		i++;
+
+	}
+	printf("the even sum is:%d\n",evensum);
+	printf("the odd sum is :%d\n",oddsum);
+	difference=evensum-oddsum;
+	printf("%d\n",difference);
+	
+}
